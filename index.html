@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCircle Hub</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom gradient for buttons and backgrounds */
+    .bg-gradient-to-r {
+      background: linear-gradient(to right, #10B981, #3B82F6);
+    }
+    .from-green-500 {
+      --tw-gradient-from: #10B981;
+    }
+    .to-blue-500 {
+      --tw-gradient-to: #3B82F6;
+    }
+    .from-green-600 {
+      --tw-gradient-from: #059669;
+    }
+    .to-blue-600 {
+      --tw-gradient-to: #2563EB;
+    }
+    /* Placeholder for Lucide icons */
+    .icon-placeholder {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-color: #e5e7eb;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 24px;
+      font-size: 12px;
+      color: #374151;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
+  <!-- Header -->
+  <header class="bg-white shadow-lg border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-3">
+          <div class="p-2 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg">
+            <span class="icon-placeholder">♻️</span>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold text-gray-900">EcoCircle</h1>
+            <p class="text-xs text-gray-600">SDG Goal 12: Responsible Consumption</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <button class="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-700">
+            <span class="icon-placeholder">📊</span> Dashboard
+          </button>
+          <button class="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100">
+            <span class="icon-placeholder">🔄</span> Circular Economy
+          </button>
+          <button class="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100">
+            <span class="icon-placeholder">🏭</span> Companies
+          </button>
+          <button class="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100">
+            <span class="icon-placeholder">🎯</span> Impact Calculator
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content (Dashboard Tab) -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-bold mb-4">Responsible Consumption & Production</h2>
+        <p class="text-lg mb-6 text-green-100">
+          Transform how we consume and produce to ensure sustainable patterns for people and planet. 
+          Join the circular economy revolution and help achieve SDG 12 by 2030.
+        </p>
+        <div class="flex gap-4">
+          <button class="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors">
+            Start Assessment
+          </button>
+          <button class="border border-green-200 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors">
+            Explore Solutions
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Global Stats -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+      <!-- Stat Card: Global Waste -->
+      <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-start justify-between">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="p-2 rounded-lg bg-red-100">
+                <span class="icon-placeholder">🗑️</span>
+              </div>
+              <h3 class="font-semibold text-gray-900">Global Waste</h3>
+            </div>
+            <p class="text-3xl font-bold text-gray-900 mb-1">2.1B</p>
+            <p class="text-sm text-gray-600">Tons generated annually</p>
+          </div>
+          <div class="flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">
+            <span class="icon-placeholder">↘️</span> -3.2
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat Card: Recycling Rate -->
+      <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-start justify-between">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="p-2 rounded-lg bg-green-100">
+                <span class="icon-placeholder">🔄</span>
+              </div>
+              <h3 class="font-semibold text-gray-900">Recycling Rate</h3>
+            </div>
+            <p class="text-3xl font-bold text-gray-900 mb-1">30%</p>
+            <p class="text-sm text-gray-600">Of total waste recycled</p>
+          </div>
+          <div class="flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
+            <span class="icon-placeholder">↗️</span> +5.4
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat Card: Food Waste -->
+      <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-start justify-between">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="p-2 rounded-lg bg-orange-100">
+                <span class="icon-placeholder">🛒</span>
+              </div>
+              <h3 class="font-semibold text-gray-900">Food Waste</h3>
+            </div>
+            <p class="text-3xl font-bold text-gray-900 mb-1">931M</p>
+            <p class="text-sm text-gray-600">Tons wasted per year</p>
+          </div>
+          <div class="flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">
+            <span class="icon-placeholder">↘️</span> -1.8
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat Card: Resource Efficiency -->
+      <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-start justify-between">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="p-2 rounded-lg bg-blue-100">
+                <span class="icon-placeholder">🏭</span>
+              </div>
+              <h3 class="font-semibold text-gray-900">Resource Efficiency</h3>
+            </div>
+            <p class="text-3xl font-bold text-gray-900 mb-1">42%</p>
+            <p class="text-sm text-gray-600">Improvement since 2015</p>
+          </div>
+          <div class="flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
+            <span class="icon-placeholder">↗️</span> +4.1
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress Metrics -->
+    <div class="mt-8">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">SDG 12 Progress Metrics</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Metric Card: Waste Reduction -->
+        <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-3 rounded-lg bg-green-100">
+              <span class="icon-placeholder">🗑️</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-semibold text-gray-900">Waste Reduction</h3>
+              <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold text-gray-900">35%</span>
+                <span class="text-sm text-green-600 font-medium">+5.2</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex justify-between text-sm">
+              <span>Progress to 2030 target</span>
+              <span>35% of 50%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="h-2 rounded-full bg-green-500" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Card: Circular Materials -->
+        <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-3 rounded-lg bg-blue-100">
+              <span class="icon-placeholder">🔄</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-semibold text-gray-900">Circular Materials</h3>
+              <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold text-gray-900">28%</span>
+                <span class="text-sm text-green-600 font-medium">+3.8</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex justify-between text-sm">
+              <span>Progress to 2030 target</span>
+              <span>28% of 40%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="h-2 rounded-full bg-blue-500" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Card: Resource Efficiency -->
+        <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-3 rounded-lg bg-purple-100">
+              <span class="icon-placeholder">🏭</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-semibold text-gray-900">Resource Efficiency</h3>
+              <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold text-gray-900">42%</span>
+                <span class="text-sm text-green-600 font-medium">+4.1</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex justify-between text-sm">
+              <span>Progress to 2030 target</span>
+              <span>42% of 60%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="h-2 rounded-full bg-purple-500" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Card: Sustainable Products -->
+        <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-3 rounded-lg bg-orange-100">
+              <span class="icon-placeholder">🍃</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-semibold text-gray-900">Sustainable Products</h3>
+              <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold text-gray-900">31%</span>
+                <span class="text-sm text-green-600 font-medium">+2.9</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex justify-between text-sm">
+              <span>Progress to 2030 target</span>
+              <span>31% of 45%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="h-2 rounded-full bg-orange-500" style="width: 68.89%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Impact Highlights -->
+    <div class="mt-8 bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+      <h3 class="text-xl font-bold text-gray-900 mb-6">Global Impact Highlights</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="text-center p-4">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+            <span class="icon-placeholder">💧</span>
+          </div>
+          <div class="text-2xl font-bold text-green-600 mb-1">25%</div>
+          <p class="text-sm text-gray-600">Water consumption reduction in manufacturing</p>
+        </div>
+        <div class="text-center p-4">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+            <span class="icon-placeholder">⚡️</span>
+          </div>
+          <div class="text-2xl font-bold text-blue-600 mb-1">35%</div>
+          <p class="text-sm text-gray-600">Energy efficiency improvements globally</p>
+        </div>
+        <div class="text-center p-4">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+            <span class="icon-placeholder">📦</span>
+          </div>
+          <div class="text-2xl font-bold text-purple-600 mb-1">60%</div>
+          <p class="text-sm text-gray-600">Reduction in single-use packaging</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
